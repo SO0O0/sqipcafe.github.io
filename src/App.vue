@@ -1,14 +1,17 @@
 <template>
   <CafeHeader />
+  <MainVisual />
 </template>
 
 <script>
 import CafeHeader from "./components/CafeHeader.vue";
+import MainVisual from "./components/MainVisual.vue";
 
 export default {
   name: "App",
   components: {
-    CafeHeader
+    CafeHeader,
+    MainVisual
   }
 };
 </script>
