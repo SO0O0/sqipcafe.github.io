@@ -85,6 +85,13 @@ export default {
     list-style-type: none;
   }
 
+  .container {
+    margin:0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+  }
+
   .header_inner {
     display: flex;
     justify-content: space-between;
