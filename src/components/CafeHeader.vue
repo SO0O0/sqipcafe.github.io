@@ -1,9 +1,9 @@
 <template>
   <div class="header">
     <div class="container">
-      <div class="header_inner">
-        <div class="header_title">
-          <h1 class="header_logo">
+      <div class="inner">
+        <div class="title">
+          <h1 class="logo">
             <a href="#">
               <img src="../assets/logo.png" alt="SQIP Cafe" />
             </a>
@@ -11,7 +11,7 @@
           </h1>
         </div>
         <div>
-          <ul class="header_info">
+          <ul class="info">
             <li>
               <a href="#">アクセス</a>
             </li>
@@ -69,11 +69,6 @@ export default {
   z-index: 100;
   opacity: 1;
 
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-
   h1 {
     font-size: 12px;
     display: flex;
@@ -86,70 +81,71 @@ export default {
   }
 
   .container {
-    margin:0 auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 1200px;
-  }
 
-  .header_inner {
-    display: flex;
-    justify-content: space-between;
-
-    .header_info {
-      color: #fff;
-      margin-left: auto;
+    .inner {
       display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      font-weight: 700;
-      width: 380px;
-      border-radius: 0 0 10px 10px;
-      margin-bottom: 20px;
-      font-size: 13px;
-    }
+      justify-content: space-between;
 
-    li {
-      margin-left: 5%;
-    }
+      .title {
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        line-height: 150%;
+        margin-top: 20px;
 
-    .iquiry {
-      background: #f4bb00;
-      padding: 15px 40px;
+        .logo {
+          margin-bottom: 5px;
 
-      a {
-        color: #000;
-        font-weight: bold;
-      }
-    }
-    .global_menu {
-      ul {
-        display: flex;
-        justify-content: space-between;
-        font-size: 16px;
-
-        li {
-          margin-left: 40px;
+          img {
+            line-height: 1;
+            font-size: 0;
+            height: auto;
+            max-width: 100%;
+            margin-right: 10px;
+            vertical-align: top;
+          }
         }
-      }
-    }
-    .header_title {
-      text-align: center;
-      color: #fff;
-      font-weight: 700;
-      line-height: 150%;
-      margin-top: 20px;
 
-      .header-logo {
-        margin-bottom: 5px;
+        .info {
+          color: #fff;
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          font-weight: 700;
+          width: 380px;
+          border-radius: 0 0 10px 10px;
+          margin-bottom: 20px;
+          font-size: 13px;
 
-        img {
-          line-height: 1;
-          font-size: 0;
-          height: auto;
-          max-width: 100%;
-          margin-right: 10px;
-          vertical-align: top;
+          li {
+            margin-left: 5%;
+          }
+
+          .iquiry {
+            background: #f4bb00;
+            padding: 15px 40px;
+
+            a {
+              color: #000;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .global_menu {
+          ul {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+
+            li {
+              margin-left: 5%;
+            }
+          }
         }
       }
     }

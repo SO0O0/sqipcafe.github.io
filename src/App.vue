@@ -33,6 +33,7 @@ export default {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
 }
 </style>
