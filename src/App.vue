@@ -4,10 +4,14 @@
   <CafeMenu />
   <CafeNews />
   <CafeAccess />
+  <CafeBanner />
+  <CafeFooter />
 </template>
 
 <script>
 import CafeAccess from "./components/CafeAccess.vue";
+import CafeBanner from "./components/CafeBanner.vue";
+import CafeFooter from "./components/CafeFooter.vue";
 import CafeHeader from "./components/CafeHeader.vue";
 import CafeMenu from "./components/CafeMenu.vue";
 import CafeNews from "./components/CafeNews.vue";
@@ -20,7 +24,9 @@ export default {
     MainVisual,
     CafeMenu,
     CafeNews,
-    CafeAccess
+    CafeAccess,
+    CafeBanner,
+    CafeFooter
   }
 };
 </script>
