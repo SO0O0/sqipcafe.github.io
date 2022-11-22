@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <header class="header">
     <div class="container">
       <div class="inner">
         <div class="title">
@@ -10,7 +10,7 @@
             <p class="time">新横浜のスペシャルティコーヒー専門店</p>
           </h1>
         </div>
-        <div>
+        <div class="menu">
           <ul class="info">
             <li>
               <a href="#">アクセス</a>
@@ -50,7 +50,7 @@
         <span></span>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -76,14 +76,9 @@ export default {
     align-items: center;
   }
 
-  ul {
-    list-style-type: none;
-  }
-
   .container {
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
 
     .inner {
       display: flex;
@@ -108,43 +103,44 @@ export default {
             vertical-align: top;
           }
         }
+      }
 
-        .info {
-          color: #fff;
-          margin-left: auto;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          font-weight: 700;
-          width: 380px;
-          border-radius: 0 0 10px 10px;
-          margin-bottom: 20px;
-          font-size: 13px;
+      .info {
+        color: #fff;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-weight: 700;
+        width: 380px;
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 20px;
+        font-size: 13px;
 
-          li {
-            margin-left: 5%;
-          }
-
-          .iquiry {
-            background: #f4bb00;
-            padding: 15px 40px;
-
-            a {
-              color: #000;
-              font-weight: bold;
-            }
-          }
+        li {
+          list-style: none;
+          margin-left: 5%;
         }
 
-        .global_menu {
-          ul {
-            display: flex;
-            justify-content: space-between;
-            font-size: 16px;
+        .iquiry {
+          background: #f4bb00;
+          padding: 15px 40px;
 
-            li {
-              margin-left: 5%;
-            }
+          a {
+            color: #000;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .global_menu {
+        ul {
+          display: flex;
+          font-size: 16px;
+
+          li {
+            margin-right: 50px;
+            list-style: none;
           }
         }
       }

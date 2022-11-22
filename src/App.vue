@@ -1,6 +1,6 @@
 <template>
   <CafeHeader />
-  <MainVisual />
+  <CafeVisual />
   <CafeMenu />
   <CafeNews />
   <CafeAccess />
@@ -15,13 +15,13 @@ import CafeFooter from "./components/CafeFooter.vue";
 import CafeHeader from "./components/CafeHeader.vue";
 import CafeMenu from "./components/CafeMenu.vue";
 import CafeNews from "./components/CafeNews.vue";
-import MainVisual from "./components/MainVisual.vue";
+import CafeVisual from "./components/CafeVisual.vue";
 
 export default {
   name: "App",
   components: {
     CafeHeader,
-    MainVisual,
+    CafeVisual,
     CafeMenu,
     CafeNews,
     CafeAccess,
