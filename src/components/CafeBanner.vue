@@ -35,13 +35,32 @@ export default {
 article {
     background: #faf8f7;
 
+    @media screen and (max-width: 599px) {
+        .container {
+            display: block;
+
+            li {
+                padding: 3%;
+                margin: 0 auto;
+                width: 50%;
+            }
+        }
+    }
+
     ul {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
 
         li {
-            margin: 50px 17px;
+            margin: 5% 1%;
+            width: 18%;
             list-style: none;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
