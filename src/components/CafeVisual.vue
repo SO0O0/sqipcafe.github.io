@@ -37,23 +37,27 @@ export default {
     z-index: 2;
 
     .label {
-      font-size: 62px;
+      font-size: 5vw;
       color: #fff;
-      letter-spacing: 10px;
+      letter-spacing: 5px;
       font-weight: lighter;
+
+      @media screen and (max-width: 768px) {
+        font-size: 8vw;
+      }
     }
 
     .guide {
       color: #fff;
-      margin-top: 30px;
+      margin-top: 2%;
     }
 
     .more {
-      margin-top: 90px;
+      margin-top: 4%;
 
       a {
         display: inline-block;
-        padding: 18px 0;
+        padding: 1% 0;
         color: #f4bb00;
         border: 1px solid #f4bb00;
         width: 15%;
