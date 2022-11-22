@@ -1,12 +1,12 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <p class="footer_logo">
+      <p class="logo">
         <a href="#">
           <img src="../assets/logo_2.png" alt="SQIP Cafe" />
         </a>
       </p>
-      <nav class="gnavi">
+      <nav class="global_menu">
         <ul>
           <li>
             <a href="#">HOME</a>
@@ -38,7 +38,7 @@
           <a href="#">サイトマップ</a>
         </li>
         <li>
-          <a href="#" class="el_btn_cta el_btn_contact">お問い合わせ</a>
+          <a href="#">お問い合わせ</a>
         </li>
       </ul>
       <p class="copyright">&copy;&nbsp;SQIP Inc. All rights reserved.</p>
@@ -54,17 +54,18 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
+  height: auto;
   background: #291e15;
 
   .container {
     margin: 0 auto;
     width: 80%;
-    .footer_logo {
+    .logo {
       text-align: center;
       padding: 43px 0;
     }
 
-    .gnavi {
+    .global_menu {
       width: 50%;
       margin: 0 auto;
       ul {
@@ -73,8 +74,18 @@ export default {
         font-size: 16px;
 
         li {
+          font-weight: bold;
           list-style: none;
-          margin-right: 25px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        ul {
+            display: block;
+            li {
+                text-align: center;
+                margin-bottom: 10px;
+            }
         }
       }
     }
@@ -84,8 +95,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid #6a625c;
-    margin-top: 55px;
+    border-top: 1px solid rgba(254, 254, 254, 0.3);
+    margin-top: 70px;
     padding-top: 35px;
 
     .info {
@@ -93,7 +104,6 @@ export default {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      font-weight: 700;
       width: 380px;
       border-radius: 0 0 10px 10px;
       margin-bottom: 35px;
@@ -109,6 +119,20 @@ export default {
       color: #fff;
       font-size: 11px;
       margin: 0 45px 35px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            width: 100%;
+        }
+
+        .copyright {
+            margin:0 0 35px 0;
+        }
     }
   }
 }
