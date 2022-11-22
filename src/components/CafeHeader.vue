@@ -7,10 +7,10 @@
             <a href="#">
               <img src="../assets/logo.png" alt="SQIP Cafe" />
             </a>
-            <p class="time">新横浜のスペシャルティコーヒー専門店</p>
+            <p class="time" v-if="windowWidth > 1100">新横浜のスペシャルティコーヒー専門店</p>
           </h1>
         </div>
-        <div class="menu">
+        <div class="menu" v-if="windowWidth > 850">
           <ul class="info">
             <li>
               <a href="#">アクセス</a>
@@ -45,14 +45,36 @@
             </ul>
           </nav>
         </div>
+        <div class="humberger" v-else>
+          <HumbergerMenu />
+        </div>
       </div>
     </div>
   </header>
 </template>
 
 <script>
+import HumbergerMenu from "./Humberger.vue";
+
 export default {
-  name: "CafeHeader"
+  name: "CafeHeader",
+  components: {
+    HumbergerMenu
+  },
+  data() {
+    return {
+      windowWidth: "",
+      menuOpen: ""
+    };
+  },
+  mounted() {
+    window.addEventListener("resize", this.resizeWindow);
+  },
+  methods: {
+    resizeWindow() {
+      this.windowWidth = window.innerWidth;
+    }
+  }
 };
 </script>
 
@@ -87,6 +109,7 @@ export default {
         font-weight: 700;
         line-height: 150%;
         margin-top: 20px;
+        margin-left: 3%;
 
         .logo {
           margin-bottom: 5px;
@@ -132,6 +155,7 @@ export default {
 
       .global_menu {
         ul {
+          width: 50%;
           display: flex;
           font-size: 16px;
 
