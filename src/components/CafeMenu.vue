@@ -9,9 +9,7 @@
     </div>
     <ul class="list">
       <li class="box">
-        <div>
           <img src="../assets/drink.png" alt="DRINK" />
-        </div>
         <h3>
           <span class="en">DRINK</span>
           <span class="ja">ドリンク</span>
@@ -19,9 +17,7 @@
         <p class="descri">本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります</p>
       </li>
       <li class="box">
-        <div>
           <img src="../assets/drink.png" alt="DRINK" />
-        </div>
         <h3>
           <span class="en">CAKE</span>
           <span class="ja">ケーキ</span>
@@ -29,9 +25,7 @@
         <p class="descri">本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります</p>
       </li>
       <li class="box">
-        <div>
           <img src="../assets/food.png" alt="FOOD" />
-        </div>
         <h3>
           <span class="en">FOOD</span>
           <span class="ja">フード</span>
@@ -53,8 +47,8 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  height: 100vh;
-  max-width: 1100px;
+  height: auto;
+  width: 80%;
   margin: 0 auto;
   .headline {
     text-align: center;
@@ -70,15 +64,29 @@ export default {
 
   .list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 60px;
+    list-style: none;
 
-    li:nth-child(2) {
-      margin: 0 1rem;
+    @media screen and (min-width: 769px) {
+      li:nth-child(2) {
+        margin: 0 1rem;
+      }
     }
 
     .box {
       width: 30%;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+        margin: 3% auto;
+      }
+
+
+      img {
+        width: 100%;
+      }
 
       h3 {
         .en {

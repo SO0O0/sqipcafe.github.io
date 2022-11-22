@@ -35,7 +35,7 @@ export default {
 article {
     background: #faf8f7;
 
-    @media screen and (max-width: 599px) {
+    @media screen and (max-width: 768px) {
         .container {
             display: block;
 

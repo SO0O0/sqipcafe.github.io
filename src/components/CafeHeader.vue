@@ -46,9 +46,6 @@
           </nav>
         </div>
       </div>
-      <div class="hamburger">
-        <span></span>
-      </div>
     </div>
   </header>
 </template>
