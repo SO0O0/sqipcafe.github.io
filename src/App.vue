@@ -2,11 +2,15 @@
   <CafeHeader />
   <MainVisual />
   <CafeMenu />
+  <CafeNews />
+  <CafeAccess />
 </template>
 
 <script>
+import CafeAccess from "./components/CafeAccess.vue";
 import CafeHeader from "./components/CafeHeader.vue";
 import CafeMenu from "./components/CafeMenu.vue";
+import CafeNews from "./components/CafeNews.vue";
 import MainVisual from "./components/MainVisual.vue";
 
 export default {
@@ -14,7 +18,9 @@ export default {
   components: {
     CafeHeader,
     MainVisual,
-    CafeMenu
+    CafeMenu,
+    CafeNews,
+    CafeAccess
   }
 };
 </script>
@@ -33,7 +39,8 @@ export default {
 }
 
 a {
-  color: #fff;
+  color : #fff;
   text-decoration: none;
 }
 </style>
+
