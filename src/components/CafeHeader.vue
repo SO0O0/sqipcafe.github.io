@@ -92,6 +92,8 @@ export default {
   }
 
   .container {
+    width: 100%;
+
     .inner {
       display: flex;
       justify-content: space-between;
