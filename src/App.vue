@@ -45,7 +45,7 @@ export default {
 }
 
 a {
-  color : #fff;
+  color: #fff;
   text-decoration: none;
 }
 </style>

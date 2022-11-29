@@ -7,7 +7,7 @@
             <a href="#">
               <img src="../assets/logo.png" alt="SQIP Cafe" />
             </a>
-            <p class="time" v-if="windowWidth > 1100">新横浜のスペシャルティコーヒー専門店</p>
+            <p class="intro" v-if="windowWidth > 1100">新横浜のスペシャルティコーヒー専門店</p>
           </h1>
         </div>
         <div class="menu" v-if="windowWidth > 850">
@@ -45,7 +45,7 @@
             </ul>
           </nav>
         </div>
-        <div class="humberger" v-else>
+        <div class="humberger" v-if="windowWidth < 849">
           <HumbergerMenu />
         </div>
       </div>
@@ -63,7 +63,7 @@ export default {
   },
   data() {
     return {
-      windowWidth: "",
+      windowWidth: "10000",
       menuOpen: ""
     };
   },
@@ -80,13 +80,9 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  display: block;
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: 100;
-  opacity: 1;
 
   h1 {
     font-size: 12px;
@@ -96,32 +92,19 @@ export default {
   }
 
   .container {
-    margin: 0 auto;
-    width: 100%;
-
     .inner {
       display: flex;
       justify-content: space-between;
 
       .title {
-        text-align: center;
         color: #fff;
-        font-weight: 700;
-        line-height: 150%;
         margin-top: 20px;
         margin-left: 3%;
 
-        .logo {
-          margin-bottom: 5px;
-
-          img {
-            line-height: 1;
-            font-size: 0;
-            height: auto;
-            max-width: 100%;
-            margin-right: 10px;
-            vertical-align: top;
-          }
+        img {
+          font-size: 0;
+          margin-right: 10px;
+          vertical-align: top;
         }
       }
 
@@ -131,14 +114,13 @@ export default {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        font-weight: 700;
-        width: 380px;
-        border-radius: 0 0 10px 10px;
-        margin-bottom: 20px;
+        font-weight: normal;
+        width: 100%;
         font-size: 13px;
 
         li {
           list-style: none;
+          padding-top: 10px;
           margin-left: 5%;
         }
 
@@ -154,6 +136,7 @@ export default {
       }
 
       .global_menu {
+        margin-top: 5%;
         ul {
           width: 50%;
           display: flex;
@@ -162,6 +145,7 @@ export default {
           li {
             margin-right: 50px;
             list-style: none;
+            font-weight: bold;
           }
         }
       }
