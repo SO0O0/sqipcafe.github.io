@@ -50,6 +50,7 @@ export default {
     .guide {
       color: #fff;
       margin-top: 2%;
+      letter-spacing: 2px;
     }
 
     .more {

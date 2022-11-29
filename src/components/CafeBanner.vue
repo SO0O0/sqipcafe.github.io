@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 article {
-    background: #faf8f7;
+    background-image: url("../assets/background.png");
 
     @media screen and (max-width: 768px) {
         .container {

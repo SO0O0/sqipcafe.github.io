@@ -43,9 +43,8 @@ export default {
 <style lang="scss" scoped>
 .news {
   width: 100%;
-  background: #f8f6f5;
+  background-image: url("../assets/background.png");
   .container {
-    background: #f8f6f5;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;

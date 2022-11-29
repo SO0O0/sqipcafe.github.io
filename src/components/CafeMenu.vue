@@ -55,12 +55,13 @@ export default {
 
     h2 {
       font: normal normal 900 44px/24px Nato Sans JP;
-      padding-top: 60px;
-      margin-bottom: 5%;
+      padding-top: 8%;
+      margin-bottom: 3%;
     }
 
     p {
       color: #666;
+      line-height: 2.0;
     }
   }
 
@@ -93,6 +94,8 @@ export default {
       }
 
       h3 {
+
+        margin-top: 2%;
         .en {
           font-size: 30px;
           display: block;
@@ -106,6 +109,11 @@ export default {
           margin-top: -0.5em;
           margin-bottom: 3%;
         }
+      }
+
+      .descri {
+        font-size: 14px;
+        line-height: 2.1;
       }
     }
   }
