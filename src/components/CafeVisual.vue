@@ -40,7 +40,7 @@ export default {
       font-size: 5vw;
       color: #fff;
       letter-spacing: 5px;
-      font-weight: lighter;
+      font: normal normal 100 62px/82px Nato Sans JP;
 
       @media screen and (max-width: 768px) {
         font-size: 8vw;

@@ -31,7 +31,10 @@ export default {
     width: 100%;
 
     h2 {
+      font: normal normal 900 44px/24px Nato Sans JP;
+      text-transform: uppercase;
       padding-top: 60px;
+      margin-bottom: 3%;
     }
 
     .headline {

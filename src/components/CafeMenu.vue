@@ -9,7 +9,7 @@
     </div>
     <ul class="list">
       <li class="box">
-          <img src="../assets/drink.png" alt="DRINK" />
+        <img src="../assets/drink.png" alt="DRINK" />
         <h3>
           <span class="en">DRINK</span>
           <span class="ja">ドリンク</span>
@@ -17,7 +17,7 @@
         <p class="descri">本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります</p>
       </li>
       <li class="box">
-          <img src="../assets/drink.png" alt="DRINK" />
+        <img src="../assets/cake.png" alt="DRINK" />
         <h3>
           <span class="en">CAKE</span>
           <span class="ja">ケーキ</span>
@@ -25,7 +25,7 @@
         <p class="descri">本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります本文が入ります</p>
       </li>
       <li class="box">
-          <img src="../assets/food.png" alt="FOOD" />
+        <img src="../assets/food.png" alt="FOOD" />
         <h3>
           <span class="en">FOOD</span>
           <span class="ja">フード</span>
@@ -54,7 +54,9 @@ export default {
     text-align: center;
 
     h2 {
+      font: normal normal 900 44px/24px Nato Sans JP;
       padding-top: 60px;
+      margin-bottom: 5%;
     }
 
     p {
@@ -74,6 +76,9 @@ export default {
         margin: 0 1rem;
       }
     }
+    p {
+      color: #666;
+    }
 
     .box {
       width: 30%;
@@ -83,7 +88,6 @@ export default {
         margin: 3% auto;
       }
 
-
       img {
         width: 100%;
       }
@@ -92,6 +96,7 @@ export default {
         .en {
           font-size: 30px;
           display: block;
+          margin-bottom: 1%;
         }
 
         .ja {
@@ -99,6 +104,7 @@ export default {
           display: block;
           color: #f4bb00;
           margin-top: -0.5em;
+          margin-bottom: 3%;
         }
       }
     }

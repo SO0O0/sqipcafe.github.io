@@ -33,9 +33,10 @@ export default {
 
 <style lang="scss">
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
 * {
-  font-family: Noto Sans CJK JP;
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
   padding: 0;
   border: 0;

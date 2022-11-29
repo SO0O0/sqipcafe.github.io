@@ -116,7 +116,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        font-weight: normal;
+        font-weight: bold;
         width: 100%;
         font-size: 13px;
 

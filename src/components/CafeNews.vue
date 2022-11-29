@@ -8,6 +8,7 @@
         <div class="list">
           <p class="date">2019.10.11</p>
           <p class="emergency">緊急のお知らせ</p>
+          <br>
           <p class="txt">明日12日（土）は台風19号のため終日休業とさせていただきます。ご了承ください。</p>
         </div>
         <div class="list">
@@ -55,6 +56,8 @@ export default {
 
       h2 {
         padding-top: 60px;
+        font: normal normal 900 44px/24px Nato Sans JP;
+        margin-bottom: 7%;
 
         .en {
           font-size: 44px;
@@ -72,10 +75,12 @@ export default {
 
       .list {
         display: flex;
+        flex-wrap: wrap;
         line-height: 2em;
         color: #666;
         margin: 1.5em 0;
-
+        font: normal normal normal 14px/24px Nato Sans JP;
+        text-align: left;
         .emergency {
           min-width: 120px;
           max-height: 2em;
@@ -84,6 +89,7 @@ export default {
           color: #fff;
           text-align: center;
           margin: 0 1.2em;
+          padding: 1px 1px;
         }
 
         .new {
@@ -94,6 +100,7 @@ export default {
           color: #fff;
           text-align: center;
           margin: 0 1.2em;
+          padding: 1px 1px;
         }
 
         .info {
@@ -104,6 +111,7 @@ export default {
           color: #fff;
           text-align: center;
           margin: 0 1.2em;
+          padding: 1px 1px;
         }
       }
     }
